@@ -20,9 +20,13 @@ public class SuperArray{
     if (size < data.length){
       data[size] = element;
       size++;
-      return true;
     }
-    return false;
+    else{
+      resize();
+      data[size] = element;
+      size++;
+    }
+    return true;
   }
 
   public String get(int index){
