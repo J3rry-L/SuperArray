@@ -25,4 +25,8 @@ public class SuperArray{
     return false;
   }
 
+  public String get(int index){
+    return(data[index]);
+  }
+
 }
