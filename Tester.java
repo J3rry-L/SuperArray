@@ -3,5 +3,8 @@ public class Tester{
     SuperArray array1 = new SuperArray();
     System.out.println(array1);
     System.out.println(array1.size());
+    array1.add("element 0");
+    System.out.println(array1);
+    System.out.println(array1.size());    
   }
 }
