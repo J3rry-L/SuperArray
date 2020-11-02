@@ -11,4 +11,8 @@ public class SuperArray{
   public String toString(){
     return(Arrays.toString(data) + "\t" + "Current Size = " + size);
   }
+
+  public int size(){
+    return size;
+  }
 }
