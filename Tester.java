@@ -17,6 +17,6 @@ public class Tester{
       System.out.println(array1.set(i, String.valueOf(i)));
       System.out.println(array1);
       System.out.println(array1.size());
-    }
+    }    
   }
 }

@@ -35,4 +35,12 @@ public class SuperArray{
     return temp;
   }
 
+  private void resize(){
+    String [] temp = new String[data.length + 10];
+    for (int i = 0; i< data.length; i++){
+      temp[i] = data[i];
+    }
+    data = temp;
+  }
+
 }
