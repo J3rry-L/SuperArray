@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class Tester{
   public static void main (String[] args){
     SuperArray array1 = new SuperArray();
@@ -32,9 +33,12 @@ public class Tester{
     System.out.println(array1);
     array1.remove(3);
     System.out.println(array1);
+    System.out.println(Arrays.toString(array1.toArray()));
+    String[] copyArray1 = array1.toArray();
     array1.clear();
     System.out.println(array1.isEmpty());
     System.out.println(array1);
+    System.out.println(Arrays.toString(copyArray1));
   }
 }
 
