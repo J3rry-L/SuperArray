@@ -26,7 +26,9 @@ public class Tester{
     System.out.println(array1.isEmpty());
     System.out.println(array1.contains("1"));
     System.out.println(array1.contains("21"));
-
+    array1.clear();
+    System.out.println(array1.isEmpty());
+    System.out.println(array1);
   }
 }
 
