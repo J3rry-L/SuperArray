@@ -26,6 +26,8 @@ public class Tester{
     System.out.println(array1.isEmpty());
     System.out.println(array1.contains("1"));
     System.out.println(array1.contains("21"));
+    System.out.println(array1.indexOf("6"));
+    System.out.println(array1.indexOf("21"));
     array1.add(3, "bob");
     System.out.println(array1);
     array1.remove(3);
