@@ -28,6 +28,8 @@ public class Tester{
     System.out.println(array1.contains("21"));
     array1.add(3, "bob");
     System.out.println(array1);
+    array1.remove(3);
+    System.out.println(array1);
     array1.clear();
     System.out.println(array1.isEmpty());
     System.out.println(array1);
