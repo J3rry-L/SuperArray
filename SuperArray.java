@@ -8,10 +8,6 @@ public class SuperArray{
     size = 0;
   }
 
-  public String toString(){
-    return(Arrays.toString(data) + "\t" + "Current Size = " + size);
-  }
-
   public int size(){
     return size;
   }
@@ -45,6 +41,27 @@ public class SuperArray{
       temp[i] = data[i];
     }
     data = temp;
+  }
+
+  public boolean isEmpty(){
+    return(size == 0);
+  }
+
+  public String toString(){
+    String[] result = new String[size];
+    for (int i = 0; i < size; i++){
+      result[i] = data[i];
+    }
+    return(Arrays.toString(result));
+  }
+
+  public boolean contains(String s){
+    for (int i = 0; i < size; i++){
+      if (data[i].equals(s)){
+        return true;
+      }
+    }
+    return false;
   }
 
 }
