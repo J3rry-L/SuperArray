@@ -39,6 +39,16 @@ public class Tester{
     System.out.println(array1.isEmpty());
     System.out.println(array1);
     System.out.println(Arrays.toString(copyArray1));
+
+    SuperArray words = new SuperArray();
+   //grouped to save vertical space
+   words.add("kani");   words.add("uni");     words.add("ebi");     words.add("una");
+   words.add("una");    words.add("ebi");     words.add("kani");    words.add("una");
+   words.add("una");    words.add("ebi");     words.add("toro");
+
+   System.out.println(words);
+   SuperArray.removeDuplicates(words);
+   System.out.println(words);
   }
 }
 

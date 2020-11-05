@@ -113,4 +113,15 @@ public class SuperArray{
     return result;
   }
 
+  public static void removeDuplicates(SuperArray s){
+    for (int i = 0; i < s.size;){
+      if (s.indexOf(s.data[i]) == i){
+        i++;
+      }
+      else{
+        s.remove(i);
+      }
+    }
+  }
+
 }
