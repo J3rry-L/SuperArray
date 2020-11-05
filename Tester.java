@@ -49,6 +49,20 @@ public class Tester{
    System.out.println(words);
    SuperArray.removeDuplicates(words);
    System.out.println(words);
+
+   SuperArray array2 = new SuperArray(5);
+   array2.add("1");
+   array2.add("2");
+   array2.add("3");
+   array2.add("4");
+   array2.add("4");
+
+   SuperArray array3 = new SuperArray(3);
+   array3.add("4");
+   array3.add("3");
+   array3.add("bob");
+
+   System.out.println(SuperArray.findOverlap(array2, array3));
   }
 }
 

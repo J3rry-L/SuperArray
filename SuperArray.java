@@ -124,4 +124,15 @@ public class SuperArray{
     }
   }
 
+  public static SuperArray findOverlap(SuperArray a, SuperArray b){
+    SuperArray result = new SuperArray(a.data.length);
+    for (int i = 0; i < a.size; i++){
+      if (b.indexOf(a.data[i]) != -1){
+        result.add(a.data[i]);
+      }
+    }
+    removeDuplicates(result);
+    return result;
+  }
+
 }
