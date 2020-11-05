@@ -144,4 +144,7 @@ public class SuperArray{
     return -1;
   }
 
+  public boolean equals(SuperArray other){
+    return (Arrays.equals(toArray(), other.toArray()));
+  }
 }

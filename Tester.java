@@ -65,6 +65,24 @@ public class Tester{
 
    System.out.println(SuperArray.findOverlap(array2, array3));
    System.out.println(array2.lastIndexOf("4"));
+   System.out.println(array2.lastIndexOf("5"));
+
+   SuperArray array4 = new SuperArray(12345);
+   array4.add("uno");
+   array4.add("dos");
+   array4.add("tres");
+   array4.add("tres");
+   array4.add("oops");
+   SuperArray array5 = new SuperArray(5);
+   array5.add("uno");
+   array5.add("dos");
+   array5.add("tres");
+   array5.add("tres");
+   array5.add("oops");
+
+   System.out.println(array4.equals(array5));
+   System.out.println(array5.equals(array4));
+   System.out.println(array4.equals(array1));
   }
 }
 
@@ -175,4 +193,13 @@ false
 true
 []
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[kani, uni, ebi, una, una, ebi, kani, una, una, ebi, toro]
+6
+[kani, uni, ebi, una, toro]
+[3, 4]
+4
+-1
+true
+true
+false
 */
