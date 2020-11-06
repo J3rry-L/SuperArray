@@ -113,28 +113,6 @@ public class SuperArray{
     return result;
   }
 
-  public static void removeDuplicates(SuperArray s){
-    for (int i = 0; i < s.size;){
-      if (s.indexOf(s.data[i]) == i){
-        i++;
-      }
-      else{
-        s.remove(i);
-      }
-    }
-  }
-
-  public static SuperArray findOverlap(SuperArray a, SuperArray b){
-    SuperArray result = new SuperArray(a.data.length);
-    for (int i = 0; i < a.size; i++){
-      if (b.indexOf(a.data[i]) != -1){
-        result.add(a.data[i]);
-      }
-    }
-    removeDuplicates(result);
-    return result;
-  }
-
   public int lastIndexOf(String value){
     for (int i = size - 1; i >= 0; i--){
       if (data[i].equals(value)){

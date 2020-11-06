@@ -48,7 +48,7 @@ public class Tester{
 
    System.out.println(words);
    System.out.println(words.lastIndexOf("kani"));
-   SuperArray.removeDuplicates(words);
+   Demo.removeDuplicates(words);
    System.out.println(words);
 
    SuperArray array2 = new SuperArray(5);
@@ -63,7 +63,7 @@ public class Tester{
    array3.add("3");
    array3.add("bob");
 
-   System.out.println(SuperArray.findOverlap(array2, array3));
+   System.out.println(Demo.findOverlap(array2, array3));
    System.out.println(array2.lastIndexOf("4"));
    System.out.println(array2.lastIndexOf("5"));
 
