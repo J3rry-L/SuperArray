@@ -83,6 +83,14 @@ public class Tester{
    System.out.println(array4.equals(array5));
    System.out.println(array5.equals(array4));
    System.out.println(array4.equals(array1));
+
+   try {
+     SuperArray error = new SuperArray(-31);
+   }
+   catch (IllegalArgumentException e){
+    e.printStackTrace();
+   }
+
   }
 }
 
