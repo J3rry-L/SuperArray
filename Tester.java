@@ -277,4 +277,24 @@ true
 true
 true
 false
+java.lang.IllegalArgumentException: initialCapacity cannot be negative. Given value: -31
+        at SuperArray.<init>(SuperArray.java:13)
+        at Tester.main(Tester.java:88)
+[]
+java.lang.IndexOutOfBoundsException: Index out of bound: 1
+        at SuperArray.get(SuperArray.java:38)
+        at Tester.main(Tester.java:104)
+toro
+java.lang.IndexOutOfBoundsException: Index out of bound: 5
+        at SuperArray.set(SuperArray.java:45)
+        at Tester.main(Tester.java:118)
+[uno, dos, tres, cuatro, oops]
+java.lang.IndexOutOfBoundsException: Index out of bound: 6
+        at SuperArray.add(SuperArray.java:90)
+        at Tester.main(Tester.java:133)
+[uno, dos, tres, cuatro, oops, cinco]
+java.lang.IndexOutOfBoundsException: Index out of bound: 6
+        at SuperArray.remove(SuperArray.java:104)
+        at Tester.main(Tester.java:148)
+[uno, dos, tres, cuatro, cinco]
 */
