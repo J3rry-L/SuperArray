@@ -129,6 +129,20 @@ public class Tester{
     e.printStackTrace();
    }
 
+   try {
+     array5.add(6, "should be error");
+   }
+   catch (IndexOutOfBoundsException e){
+    e.printStackTrace();
+   }
+
+   try {
+     array5.add(5, "cinco");
+     System.out.println(array5);
+   }
+   catch (IndexOutOfBoundsException e){
+    e.printStackTrace();
+   }
   }
 }
 
