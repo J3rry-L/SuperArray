@@ -143,6 +143,21 @@ public class Tester{
    catch (IndexOutOfBoundsException e){
     e.printStackTrace();
    }
+
+   try {
+     array5.remove(6);
+   }
+   catch (IndexOutOfBoundsException e){
+    e.printStackTrace();
+   }
+
+   try {
+     array5.remove(4);
+     System.out.println(array5);
+   }
+   catch (IndexOutOfBoundsException e){
+    e.printStackTrace();
+   }
   }
 }
 
