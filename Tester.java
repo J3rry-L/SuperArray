@@ -106,6 +106,29 @@ public class Tester{
    catch (IndexOutOfBoundsException e){
     e.printStackTrace();
    }
+
+   try {
+     System.out.println(words.get(4));
+   }
+   catch (IndexOutOfBoundsException e){
+    e.printStackTrace();
+   }
+
+   try {
+     array5.set(5, "should be error");
+   }
+   catch (IndexOutOfBoundsException e){
+    e.printStackTrace();
+   }
+
+   try {
+     array5.set(3, "cuatro");
+     System.out.println(array5);
+   }
+   catch (IndexOutOfBoundsException e){
+    e.printStackTrace();
+   }
+
   }
 }
 
