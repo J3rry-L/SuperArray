@@ -91,6 +91,21 @@ public class Tester{
     e.printStackTrace();
    }
 
+   SuperArray emptyNoError = null;
+   try {
+     emptyNoError = new SuperArray(0);
+   }
+   catch (IllegalArgumentException e){
+    e.printStackTrace();
+   }
+   System.out.println(emptyNoError);
+
+   try {
+     emptyNoError.get(1);
+   }
+   catch (IndexOutOfBoundsException e){
+    e.printStackTrace();
+   }
   }
 }
 
